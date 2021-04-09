@@ -67,6 +67,7 @@ const SingleProduct = (props) => {
                   className="w-full object-cover object-center cursor-pointer"
                   src={`${apiURL}/uploads/products/${item.pImages[0]}`}
                   alt=""
+                  style={{ height: '300px', objectFit: 'contain' }}
                 />
                 <div className="flex items-center justify-between mt-2">
                   <div className="text-gray-600 font-light truncate">

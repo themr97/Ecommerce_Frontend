@@ -44,6 +44,7 @@ const CategoryList = () => {
                   <img
                     src={`${apiURL}/uploads/categories/${item.cImage}`}
                     alt="pic"
+                    style={{ height: '100px', objectFit: 'contain' }}
                   />
                   <div className="font-medium">{item.cName}</div>
                 </div>

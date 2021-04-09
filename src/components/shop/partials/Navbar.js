@@ -362,13 +362,13 @@ const Navbar = (props) => {
           <div className="col-span-1 flex flex-col text-gray-600">
             <span
               className="font-medium text-lg tracking-widest hover:text-gray-800 hover:bg-gray-200 px-3 py-2 rounded-lg cursor-pointer"
-              onClick={(e) => history.push("/")}
+              onClick={(e) => { history.push("/"); navberToggleOpen(); }}
             >
               Shop
             </span>
             <span
               className="font-medium text-lg tracking-widest hover:text-gray-800 hover:bg-gray-200 px-3 py-2 rounded-lg cursor-pointer"
-              onClick={(e) => history.push("/contact-us")}
+              onClick={(e) => { history.push("/contact-us"); navberToggleOpen(); }}
             >
               Contact us
             </span>
@@ -376,7 +376,7 @@ const Navbar = (props) => {
         </div>
       </nav>
       {/* End Navber Section */}
-    </Fragment>
+    </Fragment >
   );
 };
 

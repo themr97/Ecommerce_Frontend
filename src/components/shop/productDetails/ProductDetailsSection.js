@@ -131,6 +131,7 @@ const ProductDetailsSection = (props) => {
                 className="w-full"
                 src={`${apiURL}/uploads/products/${sProduct.pImages[count]}`}
                 alt="Pic"
+                style={{ height: '300px', objectFit: 'contain' }}
               />
               <div className="absolute inset-0 flex justify-between items-center mb-4">
                 <svg
